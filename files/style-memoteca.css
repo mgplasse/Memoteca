@@ -37,7 +37,7 @@ position: relative;
     position: absolute;
     width: 436px;
     height: 436px;
-    top: 20%;
+    top: 110%;
     left: 0;
 }
 .right-disco {
@@ -45,22 +45,21 @@ position: relative;
     height: 436px;
     position: absolute;
     right: 0;
-    top: 50%
+    top: 105%
 }
 .TV {
     width: 378px;
     height: 378px;
     position: absolute;
     left: 0;
-    top: 70%;
+    top: 155%;
 }
 .openbook {
     width: 350px;
     height: 350px;
     position: absolute;
     right: 0;
-    bottom: 10%
-    ;
+    top: 165%;
     
 }
 
@@ -136,6 +135,8 @@ footer {
     text-align: center;
     padding: 12px 0%;
     font-size: small;
+    position: relative;
+    bottom: 0;
 }
 
 main {
@@ -147,6 +148,8 @@ main {
 }
 .text-pensamento{
     padding: 80px 0 20px 0;
+    font-size: 3rem;
+
 }
 
 .button-pensamento {
@@ -154,7 +157,9 @@ main {
     color: var(--baby-blue);
     padding: 5px 15px;
     border-radius: 30px;
-    width: fit-content;
+    width: 300px;
+    height: 40px;
+    font-size: 18px;
     margin-bottom: 40px;
     
 }
@@ -171,6 +176,7 @@ main > p {
 .mural {
     margin: 40px 0px;
     padding: 20px 0;
+    font-size: 1.5rem;
 
 }
 .conteudo-pensamentos {
@@ -178,4 +184,59 @@ main > p {
 }
 .conteudo-pensamentos > img {
     padding: 30px;
+}
+.container-input {
+    font-size: 16px;    
+    border: 1px solid black;
+    width: 50%;
+    position: relative;
+    left: 25%;
+    padding: 50px;
+
+}
+.container-input > input {
+    width: 100%;
+
+    background-color: var(--cinza-claro);
+    color: var(--cinza-medio);
+}
+.container-input > p {
+    text-align: left;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    padding: 10px 0;
+
+}
+.desabafo {
+    height: 100px;
+}
+.autor {
+    height: 32px;
+}
+.container-add-cancel {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-evenly;
+    padding: 0 30%;
+}
+.button-addpensamento {
+    background-color: var(--azul-dark);
+    color: var(--baby-blue);
+    padding: 5px 15px;
+    border-radius: 30px;
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    margin: 40px 0px;
+
+}
+.button-cancelar {
+    color: var(--azul-dark);
+    padding: 5px 15px;
+    border-radius: 30px;
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    margin: 40px 0px;
 }
