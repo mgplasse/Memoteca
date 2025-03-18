@@ -1,3 +1,17 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  font-size: 100%;
+  list-style-type: none;
+}
+
 :root {
 --baby-blue: #DBE4EF;
 --cinza-claro: #EDF0F4;
@@ -10,4 +24,21 @@
 --logo-memoteca: height:128px widht:340px; */
 --font-1: 'Poppins', sans-serif;
 --font-2: 'Roboto Mono', monospace;
+}
+
+header {
+    background-color: var(--azul-dark);
+    padding: 112px 240px 112px 360px;
+    color: var(--baby-blue);
+}
+.box1 {
+    color: var(--azul-neon);
+    
+}
+#thin {
+    font-weight: lighter;
+    
+}
+#fatter {
+    font-weight: bolder;
 }
