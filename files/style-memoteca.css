@@ -17,7 +17,7 @@ body {
 --cinza-claro: #EDF0F4;
 --cinza-medio: #8F8F8F;
 --cinza: #444;
---azul-dark: #162a47;
+--azul-dark: #001933;
 --azul-medio: #144480;
 --azul-neon: #2BDEFD;
 /* --icon-aspas: height: 51px widht:63px;
@@ -31,9 +31,54 @@ header {
     padding: 112px 240px 112px 360px;
     color: var(--baby-blue);
 }
+#container-header {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    overflow: hidden;
+    padding: 20px;
+}
+.header-left {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+}
+.header-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.header-right img {
+    max-width: 100%;
+    height: auto;
+}
+
 .box1 {
-    color: var(--azul-neon);
-    
+    display: inline-block;
+    padding-bottom: 72px;
+    width: 100%;
+}
+
+.box2 {
+display: inline-flex;
+text-align: justify;
+
+font-size: 24px;
+margin-bottom: 10px;
+width: 100%;
+}
+
+.box3 {
+height: 80%;
+width: 100%;
+
 }
 #thin {
     font-weight: lighter;
