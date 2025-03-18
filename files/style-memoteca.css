@@ -28,19 +28,20 @@ body {
 
 header {
     background-color: var(--azul-dark);
-    padding: 112px 240px 112px 360px;
+    padding: 112px 240px;
     color: var(--baby-blue);
 }
 #container-header {
     display: flex;
-    width: 80%;
-    max-width: 1200px;
     overflow: hidden;
-    padding: 20px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+
 }
 .header-left {
     flex: 1;
-    padding: 20px;
+    padding: -20px 20px 20px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,15 +63,14 @@ header {
 
 .box1 {
     display: inline-block;
-    padding-bottom: 72px;
+    padding: 20px;
     width: 100%;
 }
 
 .box2 {
-display: inline-flex;
-text-align: justify;
-
-font-size: 24px;
+text-align: left;
+padding: 20px;
+font-size: 3.75rem;
 margin-bottom: 10px;
 width: 100%;
 }
@@ -86,4 +86,16 @@ width: 100%;
 }
 #fatter {
     font-weight: bolder;
+}
+
+/* button .add {
+    background-color: var(--azul-dark);
+    color: var(--baby-blue);
+} */
+footer {
+    background-color: var(--azul-dark);
+    color: var(--baby-blue);
+    text-align: center;
+    padding: 12px 0%;
+    font-size: small;
 }
