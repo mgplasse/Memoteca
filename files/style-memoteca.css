@@ -190,13 +190,19 @@ main > p {
     padding: 10px 0;
 
 }
-.desabafo {
+.pensamento {
     height: 100px;
-    word-wrap: break-word; 
+    /* word-wrap: break-word; */
+    overflow: scroll; // Removendo barra de rolagem
+text-overflow: ellipsis; // Adicionando "..." ao final
+display: -webkit-box;
+-webkit-line-clamp: 2; // Quantidade de linhas
+-webkit-box-orient: vertical;
 
 }
 .autor {
     height: 32px;
+    text-indent: 30px;
 }
 .container-add-cancel {
     display: flex;
@@ -236,19 +242,29 @@ main > p {
 
 }
 .box4, .box5, .box6 {
-    box-shadow: 5px 5px var(--azul-medio);
+    box-shadow: 
+    5px 0px 0px var(--azul-medio),
+    0 5px 0 0px var(--azul-dark);
     width: 30%;
-    padding: 10px;
+    padding: 50px;
     height: fit-content;
+    margin: 20px;
 }
 .box7, .box10 {
-    border: 2px solid red;
+    box-shadow: 
+    5px 0px 0px var(--azul-medio),
+    0 5px 0 0px var(--azul-dark);
     width: 30%;
+    padding: 50px;
+    margin: 20px;
 }
 .box8, .box9 {
-    border: 2px solid yellow;
+    box-shadow: 
+    5px 0px 0px var(--azul-medio),
+    0 5px 0 0px var(--azul-dark);
     width: 60%;
-
+    padding: 50px;
+    margin: 20px;
 }
 footer {
     background-color: var(--azul-dark);
