@@ -125,23 +125,6 @@ width: 100%;
     font-weight: bolder;
 }
 
-/* button .add {
-    background-color: var(--azul-dark);
-    color: var(--baby-blue);
-} */
-footer {
-    background-color: var(--azul-dark);
-    color: var(--baby-blue);
-    text-align: center;
-    padding: 12px 0%;
-    font-size: small;
-    position: relative;
-    bottom: 0;
-}
-
-main {
-    height: 100vh;
-}
 .container-main {
     justify-content: center;
     text-align: center;
@@ -209,6 +192,8 @@ main > p {
 }
 .desabafo {
     height: 100px;
+    word-wrap: break-word; 
+
 }
 .autor {
     height: 32px;
@@ -228,7 +213,7 @@ main > p {
     width: 150px;
     height: 40px;
     font-size: 18px;
-    margin: 40px 0px;
+    margin: 20px 0px;
 
 }
 .button-cancelar {
@@ -238,5 +223,40 @@ main > p {
     width: 150px;
     height: 40px;
     font-size: 18px;
-    margin: 40px 0px;
+    margin: 20px 0px;
+}
+
+.container-pensamentos{
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    border: 0 50%;
+
+}
+.box4, .box5, .box6 {
+    box-shadow: 5px 5px var(--azul-medio);
+    width: 30%;
+    padding: 10px;
+    height: fit-content;
+}
+.box7, .box10 {
+    border: 2px solid red;
+    width: 30%;
+}
+.box8, .box9 {
+    border: 2px solid yellow;
+    width: 60%;
+
+}
+footer {
+    background-color: var(--azul-dark);
+    color: var(--baby-blue);
+    text-align: center;
+    padding: 20px 0%;
+    font-size: small;
+    /* position: relative;
+    bottom: 0;
+ */
 }
