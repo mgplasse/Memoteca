@@ -22,12 +22,14 @@ body {
 --azul-dark: #001933;
 --azul-medio: #144480;
 --azul-neon: #2BDEFD;
-/* --icon-aspas: height: 51px widht:63px;
---logo-memoteca: height:128px widht:340px; */
 --font-1: 'Poppins', sans-serif;
 --font-2: 'Roboto Mono', monospace;
 }
-
+.centralizar-conteudo {
+    box-shadow: 2px 2px 2px 2px red;
+    margin: 0 15%;
+    
+}
 main > img { 
 position: relative;
 
@@ -36,9 +38,10 @@ position: relative;
 .left-disco {
     position: absolute;
     width: 436px;
-    height: 436px;
+    height: 436px; 
     top: 110%;
-    left: 0;
+    left: 0; */
+
 }
 .right-disco {
     width: 436px;
@@ -52,7 +55,7 @@ position: relative;
     height: 378px;
     position: absolute;
     left: 0;
-    top: 155%;
+    top: 165%;
 }
 .openbook {
     width: 350px;
@@ -198,6 +201,7 @@ text-overflow: ellipsis; // Adicionando "..." ao final
 display: -webkit-box;
 -webkit-line-clamp: 2; // Quantidade de linhas
 -webkit-box-orient: vertical;
+text-indent: 30px;
 
 }
 .autor {
@@ -236,9 +240,15 @@ display: -webkit-box;
     border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
-    border: 0 50%;
+    border: 5% 50%;
+    padding: 20px;
+
+}
+.container-pensamentos > img {
+
+
 
 }
 .box4, .box5, .box6 {
@@ -246,7 +256,7 @@ display: -webkit-box;
     5px 0px 0px var(--azul-medio),
     0 5px 0 0px var(--azul-dark);
     width: 30%;
-    padding: 50px;
+
     height: fit-content;
     margin: 20px;
 }
@@ -255,7 +265,7 @@ display: -webkit-box;
     5px 0px 0px var(--azul-medio),
     0 5px 0 0px var(--azul-dark);
     width: 30%;
-    padding: 50px;
+
     margin: 20px;
 }
 .box8, .box9 {
@@ -263,7 +273,7 @@ display: -webkit-box;
     5px 0px 0px var(--azul-medio),
     0 5px 0 0px var(--azul-dark);
     width: 60%;
-    padding: 50px;
+
     margin: 20px;
 }
 footer {
