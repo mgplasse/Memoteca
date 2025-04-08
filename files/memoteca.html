@@ -1,85 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style-memoteca.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="script-memoteca.js">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+
+
+
+
 </head>
+
 <body>
     <header>
-    <section id="container-header">
-        <div class="box1 header-left">
-            <div class="box1">
-                <img src="image-icons/Logo/Logo.png" alt="Logo-nuvem">
-            </div> 
-            <div class="box2">
-                <h1 id="thin">Trechos de músicas, citações de livros e</h1>
-                
-                <h1 id="fatter">suas melhores ideias num só lugar!</h1>
-                <!-- cor: --baby-blue letra: poppins -->
+        <section id="container-header">
+            <div class="box1 header-left">
+                <div class="box1">
+                    <img src="image-icons/Logo/Logo.png" alt="Logo-nuvem">
+                </div>
+                <div class="box2">
+                    <h1 id="thin">Trechos de músicas, citações de livros e</h1>
+
+                    <h1 id="fatter">suas melhores ideias num só lugar!</h1>
+                    <!-- cor: --baby-blue letra: poppins -->
+                </div>
             </div>
-        </div>            
-        <div class="box3 header-right">
-            <img src="image-icons/Imagens/Imagem banner.png" alt="Imagem laptop">
-            <!-- <a href="image-icons/Imagens/Imagem banner.png"></a> -->
-            <!-- tamanho maximo 50% section -->
-        </div>
-    </section>
+            <div class="box3 header-right">
+                <img src="image-icons/Imagens/Imagem banner.png" alt="Imagem laptop">
+                <!-- <a href="image-icons/Imagens/Imagem banner.png"></a> -->
+                <!-- tamanho maximo 50% section -->
+            </div>
+        </section>
     </header>
     <main>
         <div class="centralizar-conteudo">
-        <section class="container-main">
-            <div class="text-pensamento">
-                <h1>Adicione um pensamento novo:</h1>
+            <section class="container-main">
+                <div class="text-pensamento">
+                    <button id="btnAddpensamento">Adicionar pensamento</button>
+                    <div id="menu-pensamento" style="display: none">
+                        
+                       <form id="formulario">
+                        <h1>Pensamento</h1>
+                        <input type="text" placeholder="Digite seu pensamento" id="pensamento">
+                        <h1>Autor</h1>
+                        <input type="text" placeholder="Quem escreveu foi a(o)..." id="autor">
+                        <button type="submit" id="btnEnviar">Adicionar</button>
+                        <button id="btnCancelar">Voltar</button>
+                    </form>
+                    </div>
+                </div>
+
+
+                <!-- <h1>Adicione um pensamento novo:</h1>
             </div>
             <div>                
-                <button class="button-pensamento">Adicionar pensamentos</button>
+                <button id="btnAddpensamento" class="button-pensamento">Adicionar pensamentos </button>
             </div>
-            <div class="container-input">
-                <p>Pensamento</p>
-                <input type="text" name="Pensamento" placeholder="Digite seu pensamento..." class="pensamento">
-                <p>Autor(a) ou Fonte</p>
-                <input type="text" name="Autor" placeholder="Insira o nome do(a) autor(a) ou fonte." class="autor">
+           <div id="menu-pensamento"            
+           class="container-input" style="display: none;">     Hide menu id="containerAdicionarPensamentos" -->
+                <!-- <h1>Pensamento</h1>
+                <textarea id="pensamento" class="pensamento" placeholder="Digite seu depoimento"></textarea>
+                <h1>Autor(a) ou Fonte</h1>
+                <input type="text" name="Autor" placeholder="Insira o nome do(a) autor(a) ou fonte." id="autor">
                 <div class="container-add-cancel">
-                    <input type="submit" value="Adicionar" class="button-addpensamento">
-                    <input type="submit" value="Cancelar" class="button-cancelar">
-                </div>
-            </div>
+                    <button type="submit" id="btnEnviar">Adicionar</button>
+                    <button type="submit" class="btnCancelar" id="btnCancelar">Cancelar</button> -->
 
-            <div class="mural">
-                <h1>Meu Mural</h1>
-            </div>
-            <div class="conteudo-pensamentos">
-                <p>Nada por aqui ainda, que tal compartilhar alguma ideia?</p>
-                <img src="image-icons/Imagens/Icone vazio.png" alt="Caixinha vazia">
-                <div class="container-pensamentos">
+                <!-- <textarea id="depoimento" placeholder="Digite seu depoimento"></textarea>
+                    <br>
+                    <input type="text" id="autor" placeholder="Nome do autor">
+                    <br>
+                    <button id="btnSalvar">Adicionar</button>
+                    <button id="btnCancelar">Excluir</button> 
+                </div>-->
+
+
+                <div class="mural">
+                    <h1>Meu Mural</h1>
+                </div>
+                <div id="frase"></div>
+
+                <div id="mural-vazio">
+                    <p>Nada por aqui ainda, que tal compartilhar alguma ideia?</p>
+                    <img src="image-icons/Imagens/Icone vazio.png" alt="Caixinha vazia">
+                </div>
+                <div id="container-pensamentos" style="display: none;">
                     <div class="box4">
                         <img src="image-icons/Imagens/Aspas.png" alt="Aspas">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem veniam ullam rerum, beatae perferendis ratione sit sunt omnis eveniet porro earum corrupti sed cum voluptatem repellat aspernatur aliquam tenetur cumque.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem veniam ullam rerum, beatae
+                            perferendis ratione sit sunt omnis eveniet porro earum corrupti sed cum voluptatem repellat
+                            aspernatur aliquam tenetur cumque.</p>
                     </div>
-                    <div class="box5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut molestias distinctio minus tenetur molestiae nihil vel labore quod ex fugiat, tempora repellat debitis accusantium architecto qui, praesentium adipisci? Dolorum.</div>
-                    <div class="box6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos reprehenderit ducimus veniam officia alias. Non officiis sapiente doloremque voluptas excepturi, quibusdam corporis, repellat quidem veniam, esse provident atque debitis dignissimos?</div>
-                    <div class="box7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quae quas veniam tempore cupiditate possimus corporis vitae aperiam, perspiciatis illo animi molestias! Natus cumque inventore vitae deleniti perspiciatis labore soluta.</div>
-                    <div class="box8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, eius quam odit aliquam vel, sunt autem eveniet optio itaque dignissimos, ipsa est debitis perspiciatis error vero asperiores dolore enim. Eaque.</div>
-                    <div class="box9">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae esse est dicta nisi non quod rerum, optio eum reprehenderit, corrupti illo aliquam, adipisci repellat! Expedita officiis illo similique doloribus ipsum?</div>
-                    <div class="box10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, aliquam corrupti laudantium officiis temporibus a quo consequuntur! Earum est, molestias aperiam nostrum quae perferendis iusto soluta, quo culpa, tenetur non.</div>
                 </div>
-            
-          
-        </section>
+
+
+            </section>
         </div>
         <section>
-        <img src="image-icons/Imagens/Colagem1.png" alt="Left Disco" class="left-disco">
-        <img src="image-icons/Imagens/Colagem 2 .png" alt="Right Disco" class="right-disco">
-        <img src="image-icons/Imagens/Colagem 3.png" alt="TV" class="TV">
-        <img src="image-icons/Imagens/Colagem 4.png" alt="Open Book" class="openbook">
+            <img src="image-icons/Imagens/Colagem1.png" alt="Left Disco" class="left-disco">
+            <img src="image-icons/Imagens/Colagem 2 .png" alt="Right Disco" class="right-disco">
+            <img src="image-icons/Imagens/Colagem 3.png" alt="TV" class="TV">
+            <img src="image-icons/Imagens/Colagem 4.png" alt="Open Book" class="openbook">
         </section>
     </main>
     <footer>
-        <p>© 2024 Desenvolvido por Alura. Projeto fictício sem fins comerciais.</p>
+        <p>© 2025 Desenvolvido por Mauris, pelo Alura. Projeto fictício sem fins comerciais.</p>
     </footer>
+    <script src="memoteca.js"></script>
 </body>
+
 </html>

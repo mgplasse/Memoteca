@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pensamentos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+    #menu-pensamento {
+      display: none;
+      margin-top: 20px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      margin-bottom: 5px;
+      font-size: 18px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .btn {
+      padding: 10px 15px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .btn-secondary {
+      background-color: #ccc;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <button id="btn-abrir-menu" class="btn btn-primary">Adicionar Pensamento</button>
+
+  <div id="menu-pensamento">
+    <h1>Autor</h1>
+    <input type="text" id="autor" placeholder="Digite o nome do autor">
+
+    <h1>Pensamento</h1>
+    <input type="text" id="pensamento" placeholder="Digite o pensamento">
+
+    <button id="btn-enviar" class="btn btn-primary">Enviar Pensamento</button>
+    <button id="btn-cancelar" class="btn btn-secondary">Cancelar</button>
+  </div>
+
+  <script>
+    const btnAbrir = document.getElementById('btn-abrir-menu');
+    const menu = document.getElementById('menu-pensamento');
+    const btnCancelar = document.getElementById('btn-cancelar');
+    const btnEnviar = document.getElementById('btn-enviar');
+
+    btnAbrir.addEventListener('click', () => {
+      menu.style.display = 'block';
+      btnAbrir.style.display = 'none';
+    });
+
+    btnCancelar.addEventListener('click', () => {
+      menu.style.display = 'none';
+      btnAbrir.style.display = 'inline-block';
+    });
+
+    btnEnviar.addEventListener('click', () => {
+      const autor = document.getElementById('autor').value;
+      const pensamento = document.getElementById('pensamento').value;
+      console.log(`Pensamento de ${autor}: ${pensamento}`);
+      // Aqui você pode adicionar lógica para salvar ou exibir o pensamento
+
+      menu.style.display = 'none';
+      btnAbrir.style.display = 'inline-block';
+    });
+  </script>
+</body>
+</html>

@@ -5,284 +5,256 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
   font-size: 100%;
   list-style-type: none;
   width: auto;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 :root {
---baby-blue: #DBE4EF;
---cinza-claro: #EDF0F4;
---cinza-medio: #8F8F8F;
---cinza: #444;
---azul-dark: #001933;
---azul-medio: #144480;
---azul-neon: #2BDEFD;
---font-1: 'Poppins', sans-serif;
---font-2: 'Roboto Mono', monospace;
+  --baby-blue: #dbe4ef;
+  --cinza-claro: #edf0f4;
+  --cinza-medio: #8f8f8f;
+  --cinza: #444;
+  --azul-dark: #001933;
+  --azul-medio: #144480;
+  --azul-neon: #2bdefd;
+  --font-1: "Poppins", sans-serif;
+  --font-2: "Roboto Mono", monospace;
 }
 .centralizar-conteudo {
-    box-shadow: 2px 2px 2px 2px red;
-    margin: 0 15%;
-    
+  border: 2px solid red;
+  margin: 0 15%;
 }
-main > img { 
-position: relative;
-
+main > img {
+  position: relative;
 }
 
 .left-disco {
-    position: absolute;
-    width: 436px;
-    height: 436px; 
-    top: 110%;
-    left: 0; */
-
+  position: absolute;
+  width: 436px;
+  height: 436px;
+  top: 110%;
+  left: 0;
 }
 .right-disco {
-    width: 436px;
-    height: 436px;
-    position: absolute;
-    right: 0;
-    top: 105%
+  width: 436px;
+  height: 436px;
+  position: absolute;
+  right: 0;
+  top: 105%;
 }
 .TV {
-    width: 378px;
-    height: 378px;
-    position: absolute;
-    left: 0;
-    top: 165%;
+  width: 378px;
+  height: 378px;
+  position: absolute;
+  left: 0;
+  top: 165%;
 }
 .openbook {
-    width: 350px;
-    height: 350px;
-    position: absolute;
-    right: 0;
-    top: 165%;
-    
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  right: 0;
+  top: 165%;
 }
 
 header {
-    background-color: var(--azul-dark);
-    padding: 112px 240px;
-    color: var(--baby-blue);
+  background-color: var(--azul-dark);
+  padding: 112px 240px;
+  color: var(--baby-blue);
 }
 #container-header {
-    display: flex;
-    overflow: hidden;
-    padding: 5px;
-    justify-content: center;
-    align-items: center;
-
+  display: flex;
+  overflow: hidden;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
 }
 .header-left {
-    flex: 1;
-    padding: -20px 20px 20px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 50%;
+  flex: 1;
+  padding: -20px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
 }
 .header-right {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
 }
 
 .header-right img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .box1 {
-    display: inline-block;
-    padding: 20px;
-    width: 100%;
+  display: inline-block;
+  padding: 20px;
+  width: 100%;
 }
 
 .box2 {
-text-align: left;
-padding: 20px;
-font-size: 3.75rem;
-margin-bottom: 10px;
-width: 100%;
+  text-align: left;
+  padding: 20px;
+  font-size: 3.75rem;
+  margin-bottom: 10px;
+  width: 100%;
 }
 
 .box3 {
-height: 80%;
-width: 100%;
-
+  height: 80%;
+  width: 100%;
 }
 #thin {
-    font-weight: lighter;
-    
+  font-weight: lighter;
 }
 #fatter {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 .container-main {
-    justify-content: center;
-    text-align: center;
+  justify-content: center;
+  text-align: center;
 }
-.text-pensamento{
-    padding: 80px 0 20px 0;
-    font-size: 3rem;
-
+.text-pensamento {
+  padding: 80px 0 20px 0;
+  font-size: 3rem;
 }
 
 .button-pensamento {
-    background-color: var(--azul-dark);
-    color: var(--baby-blue);
-    padding: 5px 15px;
-    border-radius: 30px;
-    width: 300px;
-    height: 40px;
-    font-size: 18px;
-    margin-bottom: 40px;
-    
+  background-color: var(--azul-dark);
+  color: var(--baby-blue);
+  padding: 5px 15px;
+  border-radius: 30px;
+  width: 300px;
+  height: 40px;
+  font-size: 18px;
+  margin-bottom: 40px;
 }
 main > h1 {
-    font-size: larger;
-    font-weight: bolder;
-    font-family: var(--font-2);
+  font-size: larger;
+  font-weight: bolder;
+  font-family: var(--font-2);
 }
 main > p {
-    font-size: smaller;
-    font-weight: lighter;
-    font-family: var(--font-2);
+  font-size: smaller;
+  font-weight: lighter;
+  font-family: var(--font-2);
 }
 .mural {
-    margin: 40px 0px;
-    padding: 20px 0;
-    font-size: 1.5rem;
-
+  margin: 40px 0px;
+  padding: 20px 0;
+  font-size: 1.5rem;
 }
 .conteudo-pensamentos {
-    padding: 20px;
+  padding: 20px;
 }
 .conteudo-pensamentos > img {
-    padding: 30px;
+  padding: 30px;
 }
 .container-input {
-    font-size: 16px;    
-    border: 1px solid black;
-    width: 50%;
-    position: relative;
-    left: 25%;
-    padding: 50px;
-
+  font-size: 16px;
+  border: 1px solid black;
+  width: 50%;
+  position: relative;
+  left: 25%;
+  padding: 50px;
 }
 .container-input > input {
-    width: 100%;
+  width: 100%;
 
-    background-color: var(--cinza-claro);
-    color: var(--cinza-medio);
+  background-color: var(--cinza-claro);
+  color: var(--cinza-medio);
 }
 .container-input > p {
-    text-align: left;
-    font-weight: bolder;
-    font-size: 1.5rem;
-    padding: 10px 0;
+  text-align: left;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  padding: 10px 0;
 
 }
 .pensamento {
-    height: 100px;
-    /* word-wrap: break-word; */
-    overflow: scroll; // Removendo barra de rolagem
-text-overflow: ellipsis; // Adicionando "..." ao final
-display: -webkit-box;
--webkit-line-clamp: 2; // Quantidade de linhas
--webkit-box-orient: vertical;
-text-indent: 30px;
+  height: 100px;
+  /* word-wrap: break-word; */
+  overflow: scroll; /*  Removendo barra de rolagem */
+  text-overflow: ellipsis; /* Adicionando "..." ao final */
+  display: -webkit-box;
 
+  -webkit-box-orient: vertical;
+  text-indent: 30px;
+  line-height: 20px;
+  width: 100%;
+  padding-top: 8px;
+  font-family: var(--font-1);
+  color: var(--cinza-medio);
 }
-.autor {
-    height: 32px;
-    text-indent: 30px;
+#autor {
+  height: 32px;
+  text-indent: 30px;
+  font-family: var(--font-1);
+  color: var(--cinza-medio);
 }
 .container-add-cancel {
-    display: flex;
-    width: 100%;
-    height: auto;
-    justify-content: space-evenly;
-    padding: 0 30%;
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-evenly;
+  padding: 0 30%;
 }
 .button-addpensamento {
-    background-color: var(--azul-dark);
-    color: var(--baby-blue);
-    padding: 5px 15px;
-    border-radius: 30px;
-    width: 150px;
-    height: 40px;
-    font-size: 18px;
-    margin: 20px 0px;
-
+  background-color: var(--azul-dark);
+  color: var(--baby-blue);
+  padding: 5px 15px;
+  border-radius: 30px;
+  width: 150px;
+  height: 40px;
+  font-size: 18px;
+  margin: 20px 0px;
 }
 .button-cancelar {
-    color: var(--azul-dark);
-    padding: 5px 15px;
-    border-radius: 30px;
-    width: 150px;
-    height: 40px;
-    font-size: 18px;
-    margin: 20px 0px;
+  color: var(--azul-dark);
+  padding: 5px 15px;
+  border-radius: 30px;
+  width: 150px;
+  height: 40px;
+  font-size: 18px;
+  margin: 20px 0px;
 }
 
-.container-pensamentos{
-    border: 1px solid black;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    text-align: center;
-    border: 5% 50%;
-    padding: 20px;
-
+.container-pensamentos {
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  text-align: center;
+  border: 5% 50%;
+  padding: 20px;
 }
-.container-pensamentos > img {
 
-
-
+.contentPensamentos {
+  box-shadow: 5px 0px 0px var(--azul-medio), 0 5px 0 0px var(--azul-dark);
+  width: 30%;
+  height: fit-content;
+  margin: 20px;
 }
-.box4, .box5, .box6 {
-    box-shadow: 
-    5px 0px 0px var(--azul-medio),
-    0 5px 0 0px var(--azul-dark);
-    width: 30%;
 
-    height: fit-content;
-    margin: 20px;
-}
-.box7, .box10 {
-    box-shadow: 
-    5px 0px 0px var(--azul-medio),
-    0 5px 0 0px var(--azul-dark);
-    width: 30%;
-
-    margin: 20px;
-}
-.box8, .box9 {
-    box-shadow: 
-    5px 0px 0px var(--azul-medio),
-    0 5px 0 0px var(--azul-dark);
-    width: 60%;
-
-    margin: 20px;
-}
 footer {
-    background-color: var(--azul-dark);
-    color: var(--baby-blue);
-    text-align: center;
-    padding: 20px 0%;
-    font-size: small;
-    /* position: relative;
-    bottom: 0;
- */
+  background-color: var(--azul-dark);
+  color: var(--baby-blue);
+  text-align: center;
+  padding: 8px 0%;
+  font-size: small;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  
+
 }
